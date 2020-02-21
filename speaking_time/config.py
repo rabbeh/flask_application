@@ -1,0 +1,13 @@
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_USERNAME = ''
+MAIL_PASSWORD = ''
+MAIL_USE_TLS =  True
+MAIL_PORT = 587
+ADMINS = ['']
+SECRET_KEY = 'dev'
+MAIL_RECIPIENTS = ['']
+UPLOAD_FOLDER = '/home/sail1/rajatheb/tmp/'
+MAIL_SUBJECT = 'ITU_speaking_time_numbers'
+REDIS_URL = 'redis://localhost:6379'
+QUEUES = ['default']
+JOB_TIMEOUT=3600

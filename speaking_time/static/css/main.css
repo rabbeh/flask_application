@@ -1,0 +1,8 @@
+.navbar-fixed-top {
+min-height: 70px;
+}
+
+body {
+    min-height: 2000px;
+    padding-top: 80px;
+}
