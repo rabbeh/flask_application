@@ -83,9 +83,10 @@ def run_task():
             filename = secure_filename(ipfile.filename)
             filepath = os.path.join(current_app.config['UPLOAD_FOLDER'], filename)
             ipfile.save(filepath)
-#            flash("File {} has been uploaded successfully, please wait for email with inference details".format(filename))
+            ### Next two lines need to be run on another server!!
             job_queue = Queue()
             job = job_queue.enqueue('speaking_time.process_files.run_pipeline', args=(filepath, email), timeout=current_app.config['JOB_TIMEOUT'])
+            
             response = {'task_status': job.get_status(),
                         'file_id': filename,
                         'prog' : 'Beginning inference',
