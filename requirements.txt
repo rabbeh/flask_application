@@ -1,4 +1,4 @@
-requests==2.18.4
+requests
 flask
 wtforms
 werkzeug
