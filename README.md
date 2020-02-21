@@ -16,6 +16,6 @@
    $ pip install -r requirements.txt
 ```
 4. In a new window/tab, start rq-worker: ``` python flask_app.py runworker```
-5. Run flask application!: ``` python flask_app.py runserver --host 0.0.0.0 --port 1234
+5. Run flask application!: ``` python flask_app.py runserver --host 0.0.0.0 --port 1234```
 6. View the application at ```localhost:1234```
 
